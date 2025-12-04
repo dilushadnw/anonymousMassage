@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anonymous Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Anonymous Feedback Board</h2>
+
+<!-- User box -->
+<div id="userBox">
+  <textarea id="msg" placeholder="Write your message"></textarea><br>
+  <button id="sendBtn">Send</button>
+</div>
+
+<h3>Messages</h3>
+<div id="all"></div>
+
+<hr>
+
+<!-- Admin box -->
+<div id="adminBox">
+  <h3>Admin Panel</h3>
+  <input type="password" id="adminPass" placeholder="Admin password">
+  <button id="adminLoginBtn">Login as Admin</button>
+  <div id="adminMessages"></div>
+</div>
+
+<!-- Firebase SDK (v8 namespaced because script.js uses db.collection(...)) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- App script -->
+<script src="script.js" defer></script>
+</body>
+</html>

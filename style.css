@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+  background:#f2f2f2;
+  text-align:center;
+}
+
+textarea {
+  width:80%;
+  height:80px;
+  padding:5px;
+  margin:5px 0;
+}
+
+button {
+  padding:8px 15px;
+  background:black;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+#adminMessages button {
+  background:red;
+  margin-left:10px;
+}
